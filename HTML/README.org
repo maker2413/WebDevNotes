@@ -1,0 +1,21 @@
+#+TITLE: HTML
+
+HTML or Hyper Text Markup Language is the standard markup language for documents
+that will be displayed in a web browser. Since I have learned HTML long ago
+these notes really going to be nothing more than some skimming over examples I
+have from long ago and some brief notes. If you are wanting to learn HTML I
+recommend any number of online guides as HTML is just a way to write content
+with some minor formatting.
+
+CSS is a bit deeper of a topic as CSS is used to Style the text you have in your
+HTML.
+
+* Examples:
+  - 1. :: [[./basics.html][Basics]]
+  - 2. :: [[./Media/index.html][Media]]
+
+* Tips:
+  [[https://www.geeksforgeeks.org/difference-between-strong-and-bold-tag-in-html/][Strong vs Bold]]
+  [[https://www.geeksforgeeks.org/difference-between-i-and-em-tag-of-html/][Italics vs em]]
+  [[https://www.w3schools.com/tags/tag_dfn.asp][dfn]]
+  [[https://www.html.am/reference/html-special-characters.cfm][HTML special characters]]

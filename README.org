@@ -1,0 +1,9 @@
+#+TITLE: Web Development Notes
+
+I have learned the basics of web development many time before, but this time I
+want to take it more seriously and actually master some of the concepts. This
+repository is going to contain notes for all aspect of web development. All the
+way from HTML to JavaScript.
+
+* Topics:
+  - 1. :: [[./HTML/README.org][HTML]]
