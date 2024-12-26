@@ -13,6 +13,8 @@ HTML.
 * Examples:
   - 1. :: [[./basics.html][Basics]]
   - 2. :: [[./Media/index.html][Media]]
+  - 3. :: [[./Organization/index.html][Semantics and Organization]]
+  - 4. :: [[./TablesAndForms/index.html][Tables and Forms]]
 
 * Tips:
   [[https://www.geeksforgeeks.org/difference-between-strong-and-bold-tag-in-html/][Strong vs Bold]]
