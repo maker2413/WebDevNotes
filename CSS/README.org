@@ -1,1 +1,11 @@
 #+TITLE: CSS
+
+CSS or Cascading Style Sheets is used to describe how your HTML content should
+be presented. The term cascading is used to note how the inheritance of
+attributes is determined in CSS.
+
+* Examples:
+  - 1. :: [[./Essentials/index.html][Essentials]]
+
+* Tips:
+  Box Model: https://www.w3schools.com/css/css_boxmodel.asp
