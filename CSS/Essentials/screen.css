@@ -14,9 +14,27 @@
   float: left;
 }
 
-.sidbar {
+.sidebar {
   width: 34%;
   float: left;
+}
+
+.fix {
+  clear: both;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
 }
 
 .box-a {
