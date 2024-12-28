@@ -19,6 +19,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~border-spacing~: Controls the spacing between borders
   - ~border-collapse~: Sets whether cells inside a table have shared or separate
     borders
+  - ~border-radius~: Rounds the corners of an element's outer border edge
   - ~box-sizing~: Controls the total height and width of a box keeping in mind
     the margin, border, and padding
     - https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
@@ -48,6 +49,9 @@ any CSS applied to it child attributes will automatically inherit them.
       are defined clockwise (top, right, bottom, left):
       ~margin: 20px 40px 20px 40px;~  - ~max-width~: Controls the maximum allowed width
   - ~max-height~: Controls the maximum allowed height
+  - ~outline~: Controls outline properties
+  - ~overflow~: Set the desired behavior when content does not fit in the
+    element's padding box
   - ~padding~: Controls the spacing between the content and the border of a box
     - Padding can be set manually on all 4 directions (left, right, top, bottom)
       or all 4 directions can be set in one line. If this is done the directions
@@ -69,6 +73,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~text-decoration~: Controls the style of underline on an item
   - ~text-shadow~: Adds shadows to text.
     - It accepts the following inputs: ~offset-x offset-y blur-radius color~
+  - ~visibility~: Shows or hides and element without changing the layout
   - ~width~: Controls the width of a box
   - ~z-index~: Sets the z-order of a positioned element (larger z-index will
     override any item with a small z-index)
@@ -78,3 +83,8 @@ any CSS applied to it child attributes will automatically inherit them.
 
   Targeting the =nth= child of an element:
   https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
+  Targeting specific attributes:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+  Form elements do not inherit font family settings from parent attributes.
