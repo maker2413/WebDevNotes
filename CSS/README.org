@@ -8,6 +8,8 @@ any CSS applied to it child attributes will automatically inherit them.
 * Examples:
   - 1. :: [[./Essentials/index.html][Essentials of CSS]]
   - 2. :: [[./Intermediate/index.html][Intermediate CSS]]
+  - 3. :: [[./Typography/index.html][Typography]]
+  - 4. :: [[./Backgrounds/index.html][Backgrounds]]
 
 * CSS Properties
   CSS has too many properties to list here. I'm only going to document the
@@ -41,7 +43,11 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~font-family~: Specifies a prioritized list of one or more font family names
     to be used
   - ~font-size~: Controls the font size
+  - ~font-style~: Controls the style of a font like normal, italic, or oblique
+  - ~font-weigth~: Set the weight (boldness) of a font
   - ~height~: Controls the height of a box
+  - ~letter-spacing~: Sets the spacing between letters
+  - ~line-height~: Sets the height of lines of text
   - ~list-style~: Controls the style of bullet points in a list
   - ~margin~: Controls the spacing around the outside of a box
     - Margin can be set manually on all 4 directions (left, right, top, bottom)
@@ -71,10 +77,15 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~text-align~: Controls the alignment of text
     - ~vertical-align~: Controls the vertical alignment of text
   - ~text-decoration~: Controls the style of underline on an item
+  - ~text-indent~: Sets the length of empty space (indentation) that is put
+    before lines of text in a block
   - ~text-shadow~: Adds shadows to text.
     - It accepts the following inputs: ~offset-x offset-y blur-radius color~
+  - ~text-transform~: Controls how to capitalize an element's text
+    - Can be used to force uppercase or lowercase
   - ~visibility~: Shows or hides and element without changing the layout
   - ~width~: Controls the width of a box
+  - ~word-spacing~: Sets the spacing between words
   - ~z-index~: Sets the z-order of a positioned element (larger z-index will
     override any item with a small z-index)
 
@@ -88,3 +99,6 @@ any CSS applied to it child attributes will automatically inherit them.
   https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
 
   Form elements do not inherit font family settings from parent attributes.
+
+  Custom fonts can be added to your website with ~@font-face~:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face

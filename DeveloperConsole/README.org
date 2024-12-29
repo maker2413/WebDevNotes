@@ -1,0 +1,9 @@
+#+TITLE: Developer Console Tips and Tricks
+
+I have never really taken the time before to learn the ins and outs of the
+developer console in Chromium based browsers or Firefox so I wanted a place to
+just note little things I learn here and there in case it helps others.
+
+Opening the Developer Console will allow you to not only view the HTML and CSS,
+but will allow you to view what attributes of CSS are inherited from what
+parents elements.
