@@ -10,6 +10,8 @@ any CSS applied to it child attributes will automatically inherit them.
   - 2. :: [[./Intermediate/index.html][Intermediate CSS]]
   - 3. :: [[./Typography/index.html][Typography]]
   - 4. :: [[./Backgrounds/index.html][Backgrounds]]
+  - 5. :: [[./AdvancedBackgrounds/index.html][Advanced Backgrounds]]
+  - 6. :: [[./ResponsiveDesign/index.html][Responsive Web Design]]
 
 * CSS Properties
   CSS has too many properties to list here. I'm only going to document the
@@ -17,6 +19,10 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~background-color~: Controls the background color
     - Can be set a color by name, by hexadecimal, or by ~rgba~, which will allow
       us to set the opacity as well as the color
+  - ~background-image~: Sets one or more background images on an element
+  - ~background-position~: Sets the initial position for each background image
+  - ~background-repeat~: Sets how background images are repeated
+  - ~background-size~: Sets the size of the element's background image
   - ~border~: Controls the border around a box
   - ~border-spacing~: Controls the spacing between borders
   - ~border-collapse~: Sets whether cells inside a table have shared or separate
@@ -102,3 +108,6 @@ any CSS applied to it child attributes will automatically inherit them.
 
   Custom fonts can be added to your website with ~@font-face~:
   https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+  Gradients can be created with:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
