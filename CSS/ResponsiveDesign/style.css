@@ -128,6 +128,66 @@ header p {
   font-size: 85%;
 }
 
+.info-box {
+  background-color: #efeedb;
+  border: 5px solid #e6e5c2;
+  padding: 20px 40px 7px 40px;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-area,
+  .sidebar {
+    width: auto;
+    float: none;
+  }
+
+  .main-area {
+    padding-right: 0;
+  }
+
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+  }
+
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-area {
+    padding-top: 20px;
+  }
+
+  .hide-small {
+    display: none;
+  }
+
+  .site-nav li {
+    width: 50%;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 85%;
