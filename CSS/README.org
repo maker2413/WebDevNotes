@@ -12,10 +12,17 @@ any CSS applied to it child attributes will automatically inherit them.
   - 4. :: [[./Backgrounds/index.html][Backgrounds]]
   - 5. :: [[./AdvancedBackgrounds/index.html][Advanced Backgrounds]]
   - 6. :: [[./ResponsiveDesign/index.html][Responsive Web Design]]
+  - 7. :: [[./ResponsiveGrids/index.html][Responsive Grid Design]]
+  - 8. :: [[./Flexbox/index.html][Flexbox]]
+  - 9. :: [[./GridLayout/index.html][Grid Layout]]
 
 * CSS Properties
   CSS has too many properties to list here. I'm only going to document the
   common ones and the super useful ones:
+  - ~align-content~: Sets the distribution of space between and around content
+    items in a flexbox or grid
+  - ~align-items~: Sets the alignment of items in a flexbox or grid
+  - ~align-self~: overrides a grid or flex item's ~align-items~
   - ~background-color~: Controls the background color
     - Can be set a color by name, by hexadecimal, or by ~rgba~, which will allow
       us to set the opacity as well as the color
@@ -41,6 +48,15 @@ any CSS applied to it child attributes will automatically inherit them.
     - Can be set a color by name, by hexadecimal, or by ~rgba~, which will allow
       us to set the opacity as well as the color
   - ~display~: Controls whether an element is treated as a block or inline box
+  - ~flex~: Shorthand for the following flex items in the following order:
+    - ~flex-grow~: Sets the flex grow factor:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+    - ~flex-shrink~: Sets the flex shrink factor:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+    - ~flex-basis~: Sets the initial main size of a flex item:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+  - ~flex-direction~: Specifies which direction we want elements to share
+    space. By default this is set to =row=
   - ~flex-wrap~: Sets whether flex items are forced onto one line or can wrap
     onto multiple lines
   - ~float~: Makes a box float above surrounding items
@@ -53,7 +69,21 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~font-size~: Controls the font size
   - ~font-style~: Controls the style of a font like normal, italic, or oblique
   - ~font-weigth~: Set the weight (boldness) of a font
+  - ~gap~: Shorthand for ~column-gap~ and ~row-gap~:
+    - ~column-gap~: Sets the size of the gap (gutter) between an element's
+      columns
+    - ~row-gap~: Sets the size of the gap (gutter) between an element's rows
+  - ~grid-column~: Shorthand for specifying grid item's size and location within
+    a grid column
+  - ~grid-row~: Shorthand for specifying grid item's size and location within
+    a grid row
+  - ~grid-template-areas~: Specifies named grid areas, establishing the cells in
+    the grid and assigning them names
+  - ~grid-template-columns~: Defines the line names and track sizing of grid
+    columns
   - ~height~: Controls the height of a box
+  - ~justify-content~: Defines how the browser distributes space between and
+    around content items along a flex container
   - ~letter-spacing~: Sets the spacing between letters
   - ~line-height~: Sets the height of lines of text
   - ~list-style~: Controls the style of bullet points in a list
@@ -66,6 +96,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~max-width~: Controls the maximum allowed width
   - ~min-height~: Controls the minimum allowed height
   - ~min-width~: Controls the minimum allowed width
+  - ~order~: Sets the order to lay out an item in a flex or grid container
   - ~outline~: Controls outline properties
   - ~overflow~: Set the desired behavior when content does not fit in the
     element's padding box
@@ -82,9 +113,9 @@ any CSS applied to it child attributes will automatically inherit them.
     - Position absolute will search up the document to find the first parent
       element with ~position: relative~ and use that element as its frame of
       reference for positioning. If no relative parent found it will base it's
-      positioning off of the page itself.
+      positioning off of the page itself
     - Position relative will base its position off of itself within the current
-      document.
+      document
   - ~text-align~: Controls the alignment of text
     - ~vertical-align~: Controls the vertical alignment of text
   - ~text-decoration~: Controls the style of underline on an item
@@ -122,3 +153,23 @@ any CSS applied to it child attributes will automatically inherit them.
     - ~sm~: Small (Tablets)
     - ~md~: Medium (Laptop or medium monitor)
     - ~lg~: Large (Desktop large monitor)
+  - Flexbox is a modern way to efficiently lay out, align, and distribute space
+    among items in a container:
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  - ~fr~ is a size measurement in CSS and it stands for fractional unit:
+    https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit
+  - ~minmax()~: is a function that defines a size range greater than or equal to
+    ~min~ and less than or equal to ~max~:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+  - Both FireFox and Chromium based browsers allow you to view a wire frame of a
+    CSS grid using the developer tools:
+    https://developer.chrome.com/docs/devtools/css/grid
+  - It can be hard to remember the difference between ~align~ and ~justify~ when
+    working with grids or flexbox. To make it easier you can think of word
+    document editing software. In Word or Google sheets you can align text left,
+    right, or center. You can also justify text, which will align the text
+    squarely in center with no margins on the left or right of the text
+  - ~repeat()~ is a CSS function that represents a repeated fragment of the
+    track list allowing a large number of columns or rows that exhibit a
+    recurring pattern to be written in a more compact form:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/repeat
