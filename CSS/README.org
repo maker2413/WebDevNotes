@@ -15,6 +15,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - 7. :: [[./ResponsiveGrids/index.html][Responsive Grid Design]]
   - 8. :: [[./Flexbox/index.html][Flexbox]]
   - 9. :: [[./GridLayout/index.html][Grid Layout]]
+  - 10. :: [[./CSS3/index.html][CSS3 Special Effects]]
 
 * CSS Properties
   CSS has too many properties to list here. I'm only going to document the
@@ -22,7 +23,17 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~align-content~: Sets the distribution of space between and around content
     items in a flexbox or grid
   - ~align-items~: Sets the alignment of items in a flexbox or grid
-  - ~align-self~: overrides a grid or flex item's ~align-items~
+  - ~align-self~: Overrides a grid or flex item's ~align-items~
+  - ~animation-direction~: Sets whether an animation should play forward,
+    backwards, or alternate back and forth
+  - ~animation-fill-mode~: Sets how a CSS animation applies styles to its
+    targets before and after its execution
+  - ~animation-iteration-count~: Controls the number of times an animation
+    sequence should be played before stopping
+  - ~animation-name~: Sets which animation should be applied to the element
+  - ~animation-delay~: Controls the delay before an animation starts
+  - ~animation-duration~: Controls the length of time for an animation to
+    complete
   - ~background-color~: Controls the background color
     - Can be set a color by name, by hexadecimal, or by ~rgba~, which will allow
       us to set the opacity as well as the color
@@ -31,6 +42,8 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~background-repeat~: Sets how background images are repeated
   - ~background-size~: Sets the size of the element's background image
   - ~border~: Controls the border around a box
+  - ~border-radius~: A property that rounds the corners of an element's outer
+    border edge
   - ~border-spacing~: Controls the spacing between borders
   - ~border-collapse~: Sets whether cells inside a table have shared or separate
     borders
@@ -38,6 +51,8 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~box-sizing~: Controls the total height and width of a box keeping in mind
     the margin, border, and padding
     - https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+  - ~box-shadow~: Adds shadow effects around an element's
+    frame. https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
   - ~clear~: Controls whether an element must be moved below (cleared) floating
     elements
     - Over the years other methods have popped up to accomplish this at the
@@ -96,6 +111,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~max-width~: Controls the maximum allowed width
   - ~min-height~: Controls the minimum allowed height
   - ~min-width~: Controls the minimum allowed width
+  - ~opacity~: Sets the opacity of an element
   - ~order~: Sets the order to lay out an item in a flex or grid container
   - ~outline~: Controls outline properties
   - ~overflow~: Set the desired behavior when content does not fit in the
@@ -125,6 +141,14 @@ any CSS applied to it child attributes will automatically inherit them.
     - It accepts the following inputs: ~offset-x offset-y blur-radius color~
   - ~text-transform~: Controls how to capitalize an element's text
     - Can be used to force uppercase or lowercase
+  - ~transform~: Lets you rotate, scale, skew, or translate an element
+  - ~transform-origin~: Sets the origin for an element's transform
+  - ~transition-duration~: Used in conjunction with ~transition-property~ to
+    control the length of time a transition should take to complete
+  - ~transition-property~: Sets the CSS properties to which the transition
+    effect should be applied
+  - ~transition-timing-function~: Controls how intermediate values are
+    calculated for CSS properties being affected by a transition effect
   - ~visibility~: Shows or hides and element without changing the layout
   - ~width~: Controls the width of a box
   - ~word-spacing~: Sets the spacing between words
@@ -173,3 +197,11 @@ any CSS applied to it child attributes will automatically inherit them.
     track list allowing a large number of columns or rows that exhibit a
     recurring pattern to be written in a more compact form:
     https://developer.mozilla.org/en-US/docs/Web/CSS/repeat
+  - ~inset~ is a property in CSS that is shorthand for ~top~, ~bottom~, ~right~,
+    and ~left~: https://developer.mozilla.org/en-US/docs/Web/CSS/
+  - ~@keyframes~ allows you to define rules for intermediate steps in a CSS
+    animation sequence:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+  - To make animations work on older browsers and mobile devices copy and paste
+    any keyframe blocks or animation shorthand and prepend ~-webkit-~ to the
+    first block or shorthand
