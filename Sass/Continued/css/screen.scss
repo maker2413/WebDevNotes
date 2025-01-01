@@ -1,0 +1,47 @@
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'header' as h;
+
+html {
+  font-size: 1em;
+  line-height: 1.35;
+  @include m.bp-babyBear {
+    font-size: .8em;
+  }
+  @include m.bp-papaBear {
+    font-size: 1.4em;
+  }
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px;
+  margin: 0;
+}
+
+a {
+  color: h.$beautifulHue;
+}
+
+.btn-a {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid h.$beautifulHue;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  @extend .btn-a;
+  @include m.verticalGradient(white, color.adjust(h.$beautifulHue, $lightness: 30%));
+}
+
+.box {
+  background-color: #DDD;
+  width: (300px * 2);
+  height: 150px;
+}

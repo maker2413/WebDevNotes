@@ -58,3 +58,4 @@ projects that are using it:
 
 * Examples:
   - 1. :: [[./Basics/main.scss][Basics]]
+  - 2. :: [[./Continued/main.scss][Sass Continued]]
