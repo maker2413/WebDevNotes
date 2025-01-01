@@ -1,0 +1,17 @@
+#+TITLE: Slide Show
+
+In this directory there are two example websites included. The first one is an
+example website included that uses CSS and JQuery to make a slide show of images
+and to add a menu button to reveal elements on small displays. The second one
+creates a pop out image modal using JQuery. In the modern day it would be more
+common to use [[https://getbootstrap.com/][bootstrap]] to accomplish this.
+
+Since I have notes on JavaScript in a separate [[https://github.com/maker2413/JavaScriptNotes][repository]] I didn't know where I
+should put these websites in this repository since they don't really relate to
+CSS and doesn't actually get into JavaScript since they are just using JQuery
+and downloaded JavaScript libraries. Therefore I'm just going to let these sites
+live here so they can still be referenced.
+
+* Sites
+  - 1 :: [[./Slideshow/index.html][Slide Show]]
+  - 2 :: [[./Modal/index.html][Image Modal]]

@@ -8,4 +8,5 @@ way from HTML to JavaScript.
 * Topics:
   - 1. :: [[./HTML/README.org][HTML]]
   - 2. :: [[./CSS/README.org][CSS]]
-  - 4. :: [[./DeveloperConsole/README.org][Developer Console]]
+  - 3. :: [[./DeveloperConsole/README.org][Developer Console]]
+  - 4. :: [[./JQuery/README.org][JQuery (Outdated)]]
