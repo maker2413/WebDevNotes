@@ -154,6 +154,7 @@ any CSS applied to it child attributes will automatically inherit them.
   - ~word-spacing~: Sets the spacing between words
   - ~z-index~: Sets the z-order of a positioned element (larger z-index will
     override any item with a small z-index)
+  - ~zoom~: Controls the magnification level of an element
 
 * Tips:
   - Box Model: https://www.w3schools.com/css/css_boxmodel.asp

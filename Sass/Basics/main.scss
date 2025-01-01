@@ -1,0 +1,32 @@
+// scss allows us to import other scss files to break up our code into cmaller chunks
+@use 'header' as h;
+// we can also import Sass libraries:
+@use 'sass:color';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  // using our variable declared in header:
+  color: h.$beautifulHue;
+}
+
+.btn-a {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid h.$beautifulHue;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  // scss let's us inherit styles for another element using @extend:
+  @extend .btn-a;
+  // adjust is a function available to us in the Sass color library:
+  background-color: color.adjust(h.$beautifulHue, $lightness: 45%);
+}

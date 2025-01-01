@@ -1,1 +1,60 @@
 #+TITLE: Sass
+
+Sass or "Syntactially awesome style sheets" is a CSS preprocessor, which means
+that it is a scripting language that is interpreted or compiled into CSS. With
+Sass you can write your style sheet in a more modern scripting language and then
+use the Sass compiler to output CSS that browsers will understand. The scripting
+language that Sass uses is called SassScript and we will be going over it in
+this section.
+
+One the most basic features of Sass that will really let it shine for you is
+that with Sass we can edit a parent and a child element all within one block. To
+demonstrate this assume we had the following HTML:
+#+begin_src html
+  <div class="box">
+    <p>Hello World</p>
+  </div>
+#+end_src
+
+With Sass we could make the box have a colored border and change the color of
+our text all like this:
+#+begin_src css
+  .box {
+    border: 3px solid orange;
+
+    p {
+      color: blue;
+    }
+  }
+#+end_src
+
+When compiled this will output the following CSS:
+#+begin_src css
+  .box {
+    border: 3px solid orange;
+  }
+  .box p {
+    color: blue;
+  }
+#+end_src
+
+Although this is a pretty simple example we can already see some of the features
+of Sass shining through. It is also important to note that Sass files are also
+completely backwards compatible with CSS and we can have vanilla CSS in our Sass
+files. Before we go any deeper let's talk about how to setup Sass and install
+the compiler.
+
+To install the Sass compiler begin by installing [[https://nodejs.org/en][node.js]]. Then in a directory
+with =scss= (Sassy CSS) files simply run:
+#+begin_src shell
+  npx sass --watch <input file> <output file>
+#+end_src
+
+To have the Sass compiler watch for changes in your =scss= file and
+automatically recompile the changes to the output file you specified.
+
+Now that we have covered what Sass is and how to setup Sass let's dive into some
+projects that are using it:
+
+* Examples:
+  - 1. :: [[./Basics/main.scss][Basics]]

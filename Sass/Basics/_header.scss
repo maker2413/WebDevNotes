@@ -1,0 +1,41 @@
+// We can define variables in scss:
+$beautifulHue: #ec7705;
+
+// example of nesting elements:
+.site-header nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    // scss let's us inherit styles for another element using @extend:
+    @extend .group
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    // using our variable declared above:
+    background-color: $beautifulHue;
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
