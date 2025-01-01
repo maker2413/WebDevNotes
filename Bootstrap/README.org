@@ -1,0 +1,18 @@
+#+TITLE: Bootstrap
+
+[[https://getbootstrap.com/][Bootstrap]] is a collection of well designed HTML, CSS, and JavaScript libraries
+that can be imported into any website and allows us to quickly build out
+beautiful websites without having to write hundreds of lines of HTML, CSS, or
+even JavaScript. It is still extremely important to learn the core concepts of
+web design though before playing around with Bootstrap or you won't ever be much
+of a developer.
+
+To use Bootstrap one just has to simply go to the Bootstrap site and grab one of
+their CDN links. They have one for the CSS they have a one for the JavaScript
+they have. From there you if want to reference any of the CSS they have already
+built out you can reference the documentation on their site and find classes
+that they have available to use in your HTML. This saves you all the effort of
+typing out CSS.
+
+Included in this directory is also an example site built out with Bootstrap:
+[[./index.html][here]]. 

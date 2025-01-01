@@ -13,5 +13,5 @@ and downloaded JavaScript libraries. Therefore I'm just going to let these sites
 live here so they can still be referenced.
 
 * Sites
-  - 1 :: [[./Slideshow/index.html][Slide Show]]
-  - 2 :: [[./Modal/index.html][Image Modal]]
+  - 1. :: [[./Slideshow/index.html][Slide Show]]
+  - 2. :: [[./Modal/index.html][Image Modal]]
